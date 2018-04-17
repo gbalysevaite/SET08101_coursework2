@@ -10,7 +10,7 @@
                 <v-avatar size="125px">
                   <img
                     class="img-circle elevation-7 mb-1"
-                    src=""
+                    src="~/assets/images/avatar.png"
                   >
                 </v-avatar>
                 <div class="headline">{{profile.username}}</div>

@@ -31,10 +31,7 @@
           return this.value
         },
         set (value) {
-          if (!value) {
-            this.$emit('input')
-          }
-          return value
+          this.$emit('input', value.id)
         }
       }
     },
@@ -49,7 +46,6 @@
     methods: {
       select: function (item) {
         this.selected = item
-        this.$emit('input', this.selected)
       }
     }
   }

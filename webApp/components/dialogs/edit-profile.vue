@@ -2,7 +2,7 @@
   <v-dialog v-model="showDialog" max-width="700px">
     <v-card>
       <v-card-title>
-        <span class="headline">Create a new Post</span>
+        <span class="headline">Edit profile</span>
       </v-card-title>
       <v-divider></v-divider>
       <v-card-text>

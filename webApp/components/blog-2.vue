@@ -4,14 +4,14 @@
       <v-container row>
         <v-flex xs12>
           <v-layout class="profile" row align-center>
-            <v-flex xs6 sm8 md9 offset-xs1></v-flex>
+            <v-flex xs6 sm8 md9></v-flex>
             <v-flex xs5 sm3 md2>
               <div class="text-xs-center">
                 <h1 class="black--text mb-3 display-3 text-xs-center">{{profile.title}}</h1>
                 <v-avatar size="125px">
                   <img
                     class="img-circle elevation-7 mb-1"
-                    src=""
+                    src="~/assets/images/avatar.png"
                   >
                 </v-avatar>
                 <div class="headline">{{profile.username}}</div>
@@ -21,7 +21,7 @@
           </v-layout>
         </v-flex>
         <v-layout row align-center class="content-base">
-          <v-flex xs7 sm9 md10 offset-xs1 column class="pl-3">
+          <v-flex xs7 sm9 md10 column class="pl-3">
             <v-flex v-if="posts.length === 0" class="display-1 text-xs-center">
               There are no posts.
             </v-flex>
@@ -56,7 +56,7 @@
               </v-card>
             </div>
           </v-flex>
-          <v-flex xs5 sm3 md2></v-flex>
+          <v-flex xs5 sm3 md2 offset-xs1></v-flex>
         </v-layout>
         <add-post v-model="showAddPost" @on-save="post => $emit('on-save-post', post)"></add-post>
         <edit-profile v-model="showEditProfile" :profile="profile" @on-edit="prof => $emit('on-edit-profile', prof)"></edit-profile>

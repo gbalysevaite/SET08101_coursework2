@@ -10,7 +10,7 @@ const APP_URL = `http://${process.env.HOST}${process.env.APP_PORT ? ':' + proces
 const API_URL = `http://${process.env.HOST}${process.env.API_PORT ? ':' + process.env.API_PORT : ''}`
 const STORAGE_PATH = path.join(__dirname, '/public')
 
-let users = {'usr': new User('usr', 'usr', 'blog-1', 'LOOOOOOOOOOOOOOOOL')}
+let users = {}
 
 const cookieSession = require('cookie-session')
 app.use(cookieSession({

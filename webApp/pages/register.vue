@@ -11,7 +11,7 @@
           <v-text-field label="Blog title" v-model="profile.title" :rules="[rules.required]" required></v-text-field>
           <v-text-field textarea label="About" :counter="200" v-model="profile.about"></v-text-field>
           <div class="mt-1 mb-3 headline">Select Design:</div>
-          <design-switch v-model="profileEdit.designType"></design-switch>
+          <design-switch v-model="profile.designType"></design-switch>
         </v-form>
       </v-card-text>
       <v-divider></v-divider>
@@ -37,7 +37,8 @@
           username: '',
           password: '',
           about: '',
-          title: ''
+          title: '',
+          designType: undefined
         },
         error: undefined,
         rules: {
